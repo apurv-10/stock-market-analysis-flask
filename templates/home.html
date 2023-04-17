@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stock Market Analysis</title>
-  <link rel="stylesheet" href='\static\style.css' />
+  <link rel="stylesheet" href='\static\css\style.css' />
 </head>
 <body>
   
@@ -24,14 +24,27 @@
       <div class="dropdown">
         <button class="dropbtn">SELECT COMPANY</button>
         <div class="dropdown-content">
-        <a href="#">Company 1</a>
-        <a href="#">Company 2</a>
-        <a href="#">Company 3</a>
-        <a href="#">Company 4</a>
-        <a href="#">Company 5</a>
-        <a href="#">Company 6</a>
+        <a href="C:\Users\KIIT\stock\ADANIPORTS.csv">ADANIPORTS</a>
+        <a href="C:\Users\KIIT\stock\COALINDIA.csv">COALINDIA</a>
+        <a href="C:\Users\KIIT\stock\HINDUNILVR.csv">HINDUNILVR</a>
+        <a href="C:\Users\KIIT\stock\ITC.csv">ITC</a>
+        <a href="C:\Users\KIIT\stock\RELIANCE.csv">RELIANCE</a>
+        <a href="C:\Users\KIIT\stock\TCS.csv">TCS</a>
+        <a href="C:\Users\KIIT\stock\TITAN.csv">TITAN</a>
+        <a href="C:\Users\KIIT\stock\WIPRO.csv">WIPRO</a>
         </div>
       </div>
+
+      <form action="" method="POST">
+          <div class="columns">
+            <div class="searcharea is-9">
+              <input class="input" type="text" name="ticker" placeholder="dataset">
+            </div>
+            <div class="searchbutton is-3">
+              <button class="button is-primary">Search</button>
+            </div>
+          </div>
+      </form>
 
       <div class="graph"></div>
 
@@ -51,7 +64,11 @@
       
     </div>
   </div>
-
+  <div class="column">
+    {%block body%}
+  
+    {%endblock%}
+  </div>
   <footer>
 
   </footer>

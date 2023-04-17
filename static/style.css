@@ -103,6 +103,15 @@ nav:hover {
 
 }
 
+/* ---------------Search area and Button------------- */
+.columns{
+  display: block;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
 /* ---------------Graph Buttons------------- */
 .btn {
   /* width: 400px; */
@@ -111,6 +120,7 @@ nav:hover {
   margin-right: auto;
   padding: 1%;
 }
+
 
 button {
   padding: 10px 18px;
